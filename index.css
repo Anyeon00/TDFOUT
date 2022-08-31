@@ -1,0 +1,100 @@
+body{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+header{
+  flex-basis: 150px;
+  background-color: rgba(0, 255, 255, 0.24);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header a{
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 0;
+
+}
+header h1{
+  margin: 20px;
+  font-size: 290%;
+}
+header h2{
+  margin: 20px;
+  margin-top: 0;
+  font-size: 160%;
+  min-width: 600px;
+}
+
+nav{
+  flex-basis: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 1800px;
+  margin-top: 20px;
+}
+nav ul{
+  margin: 5px;
+}
+nav ul li{
+  display: inline-block;
+  padding: 10px 50px;
+  margin: 0px 50px;
+  border-top: 1px solid rgb(218, 218, 218);
+  border-bottom: 1px solid rgb(218, 218, 218);
+  font-size: 21px;
+  font-weight: 530;
+}
+nav ul li:hover{
+  background-color: rgb(240, 240, 240);
+}
+
+main{
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+article{
+  margin: 100px;
+  margin-top: 50px;
+  text-align: center;
+}
+article p{
+  font-size: 180%;
+  font-weight: 500;
+}
+article img{
+  width: 600px; 
+}
+section{
+  margin: 50px;
+}
+section h1{
+  font-size: 200%;
+}
+section ul{
+  padding: 0;
+}
+section li{
+  list-style: none;
+  font-size: 120%;
+  padding: 5px 0;
+}
+section li:last-child{
+  font-size: 150%;
+  font-weight: 500;
+}
+
+footer{
+  flex-basis: 70px;
+  background-color: rgb(255, 246, 234);
+  padding-left: 30px;
+  padding-bottom: 10px;
+  font-size: 80%;
+}
